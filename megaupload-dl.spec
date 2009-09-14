@@ -1,6 +1,6 @@
 Name:		megaupload-dl
 Version:	0.2.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Megaupload automatic downloader
 
 Group:		Networking/File transfer
