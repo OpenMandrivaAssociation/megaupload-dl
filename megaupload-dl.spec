@@ -1,23 +1,21 @@
 Name:		megaupload-dl
-Version:	0.2.1
-Release:	%mkrel 2
+Version:	0.3.3
+Release:	%mkrel 1 
 Summary:	Megaupload automatic downloader
-
 Group:		Networking/File transfer
 License:	GPLv3
 URL:		http://code.google.com/p/megaupload-dl/
 Source0:	http://megaupload-dl.googlecode.com/files/%{name}-%{version}.tgz
 Source1:	megaupload.com.terms.txt
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-
 BuildRequires:	python-beautifulsoup
 BuildRequires:	python-imaging
 BuildRequires:	tesseract
 BuildRequires:	python-devel
+Requires:	python-base >= 2.6
 Requires:	python-beautifulsoup
 Requires:	python-imaging
 Requires:	tesseract
-
 BuildArch:	noarch
 
 %description
@@ -47,7 +45,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root,-)
 %doc CHANGELOG README examples/* megaupload.com.terms.txt
-%{_bindir}/megaupload_dl
+%{_bindir}/*
 %{py_puresitedir}/megaupload_dl
 %{py_puresitedir}/*.egg-info
 %exclude %{_datadir}/doc/megaupload_dl
+/usr/share/megaupload_dl/news_gothic_bt.ttf
