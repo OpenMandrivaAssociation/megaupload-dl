@@ -30,13 +30,11 @@ use your favorite web downloader to actually get the file.
 %setup -q -n %{name}
 cp %{SOURCE1} .
 
-%build
-
-
 %install
 rm -rf $RPM_BUILD_ROOT
 python setup.py install --root=$RPM_BUILD_ROOT
 
+rm -rf %buildroot%{_datadir}/doc/megaupload_dl
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -48,5 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %{py_puresitedir}/megaupload_dl
 %{py_puresitedir}/*.egg-info
-%exclude %{_datadir}/doc/megaupload_dl
-/usr/share/megaupload_dl/news_gothic_bt.ttf
+%{_datadir}/megaupload_dl/news_gothic_bt.ttf
