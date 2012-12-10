@@ -47,3 +47,25 @@ rm -rf $RPM_BUILD_ROOT
 %{py_puresitedir}/megaupload_dl
 %{py_puresitedir}/*.egg-info
 %{_datadir}/megaupload_dl/news_gothic_bt.ttf
+
+
+%changelog
+* Fri Nov 19 2010 Funda Wang <fwang@mandriva.org> 0.3.3-1mdv2011.0
++ Revision: 598842
+- update file list
+
+* Tue Feb 23 2010 Sandro Cazzaniga <kharec@mandriva.org> 0.3.3-1mdv2010.1
++ Revision: 510301
+- update to 0.3.3
+- fix requires
+- fix file list
+
+* Mon Sep 14 2009 Thierry Vignaud <tv@mandriva.org> 0.2.1-2mdv2010.0
++ Revision: 439796
+- rebuild
+
+* Fri Feb 06 2009 Jérôme Soyer <saispo@mandriva.org> 0.2.1-1mdv2009.1
++ Revision: 338185
+- import megaupload-dl
+
+
