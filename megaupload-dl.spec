@@ -4,7 +4,7 @@ Release:	%mkrel 1
 Summary:	Megaupload automatic downloader
 Group:		Networking/File transfer
 License:	GPLv3
-URL:		http://code.google.com/p/megaupload-dl/
+URL:		https://code.google.com/p/megaupload-dl/
 Source0:	http://megaupload-dl.googlecode.com/files/%{name}-%{version}.tgz
 Source1:	megaupload.com.terms.txt
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
