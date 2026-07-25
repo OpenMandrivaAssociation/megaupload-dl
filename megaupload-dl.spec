@@ -1,6 +1,6 @@
 Name:		megaupload-dl
 Version:	0.3.3
-Release:	%mkrel 1 
+Release:	2
 Summary:	Megaupload automatic downloader
 Group:		Networking/File transfer
 License:	GPLv3
